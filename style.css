@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: #444;
+    padding: 20px 10px; 
+    background-color: #fff;
+    background-image: 
+        linear-gradient(#f0f0f0 1px, transparent 1px),
+        linear-gradient(90deg, #f0f0f0 1px, transparent 1px);
+    background-size: 20px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-card {
+    background: white;
+    width: 100%;
+    max-width: 600px; 
+    padding: clamp(15px, 5vw, 30px); 
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.logo-text {
+    font-size: clamp(35px, 10vw, 55px); 
+    color: #ffb3ba;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+
+.profile-row {
+    display: flex;
+    flex-direction: row; 
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.photo-container img {
+    width: clamp(120px, 35vw, 200px); 
+    height: auto;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 4px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    flex-shrink: 0; 
+}
+
+.intro-side {
+    flex: 1;
+}
+
+h3 {
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
+    color: #333;
+    border-bottom: 2px solid #ffb3ba;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.intro-side p {
+    font-size: clamp(0.7rem, 2.5vw, 0.85rem);
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.contact-section ul {
+    list-style: none;
+    font-size: clamp(0.7rem, 2.5vw, 0.85rem);
+}
+
+.personal-info {
+    background: #ffdfd3;
+    padding: 15px;
+    border-radius: 25px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 8px;
+    font-size: clamp(0.7rem, 2.5vw, 0.85rem);
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.sub-card {
+    padding: 12px;
+    border-radius: 15px;
+    border: 1px;
+}
+
+.yellow { background-color: #fcf4dd; }
+.pink { background-color: #ffdfd3; }
+
+.sub-card h4 {
+    text-align: center;
+    font-size: clamp(0.8rem, 3vw, 1rem);
+    margin-bottom: 8px;
+}
+
+.entry {
+    font-size: clamp(0.65rem, 2.2vw, 0.75rem);
+    margin-bottom: 8px;
+}
+
+.footer-pills {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px;
+}
+
+.pill {
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.blue { background-color: #d1e9f6; }
+
+.pill h5 { font-size: clamp(0.75rem, 2.5vw, 0.9rem); margin-bottom: 2px; }
+.pill p { font-size: clamp(0.6rem, 2vw, 0.75rem); }
